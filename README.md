@@ -56,7 +56,7 @@ Immerse yourself in a captivating movie discovery experience!
 ## 🚀 Quick Start
 
 ### Option 1: Live Version
-Visit [https://idyllize.github.io/MovieFinder/](https://idyllize.github.io/MovieFinder/) to dive into movie discovery instantly.
+Visit [https://idyllize.github.io/MovieFinder/](https://moviefinder.xyz) to dive into movie discovery instantly.
 
 ### Option 2: Local Setup
 
