@@ -203,6 +203,6 @@ Modified MIT License (Non-Commercial) - See [LICENSE](LICENSE)
 
 ## 🎬 [Start Streaming Now](https://moviefinder.xyz) 🎬
 
-*Last updated: December 2024*
+*Last updated: August 28th*
 
 </div>
