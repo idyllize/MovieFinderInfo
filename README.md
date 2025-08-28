@@ -165,7 +165,7 @@ Modified MIT License (Non-Commercial) - See [LICENSE](LICENSE)
 
 <div align="center">
 
-**Built with passion by [MovieFinderInfo](https://github.com/MovieFinderInfo)**
+**Built with passion by [Idyllize](https://github.com/Idyllize)**
 
 [![Website](https://img.shields.io/badge/Website-MovieFinder-6366f1?style=for-the-badge)](https://moviefinder.xyz)
 [![GitHub](https://img.shields.io/badge/GitHub-MovieFinderInfo-181717?style=for-the-badge&logo=github)](https://github.com/MovieFinderInfo)
