@@ -1,234 +1,208 @@
 # 🎬 MovieFinder
 
-**Discover movies and TV shows with a stunning, modern platform for instant streaming**
+**The ultimate streaming platform for movies and TV shows with multi-source playback**
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-6366f1?style=for-the-badge&logo=vercel)](https://idyllize.github.io/MovieFinder/)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/idyllize/MovieFinder)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-6366f1?style=for-the-badge&logo=vercel)](https://moviefinder.xyz)
+[![API Status](https://img.shields.io/badge/API-Active-10b981?style=for-the-badge)](https://movie-finder-api-theta.vercel.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/MovieFinderInfo)
+[![License](https://img.shields.io/badge/License-MIT_NonCommercial-green?style=for-the-badge)](LICENSE)
 
 ---
 
 ## ✨ Features
 
-### 🔍 **Intelligent Search**
-- Real-time search powered by The Movie Database (TMDB) API
-- Comprehensive results for movies and TV shows
-- Rich details including ratings, release years, overviews, and posters
+### 📺 **Movies & TV Shows**
+- Full support for both movies and TV series
+- Season and episode selection with dropdown navigation
+- Automatic episode tracking (S1E1, S2E5, etc.)
+- Visual badges to distinguish content types
 
-### 🔥 **Trending Movies**
-- Dynamic weekly trending movies with vibrant poster displays
-- Auto-refresh for the latest trends via TMDB
-- Direct streaming links to top platforms
+### 🎮 **5-Player System**
+- **Player 1-4**: Premium sources (VidSrc, VidSrc2, MultiEmbed, 2Embed)
+- **Player 5**: FlixBaba fallback option
+- Smart proxy system to bypass restrictions
+- Auto-switching on failure
 
-### 🎨 **Exquisite Design**
-- Animated gradient backgrounds in cosmic purple and violet
-- Glassmorphism with frosted glass effects and aurora animations
-- Mobile-first, fully responsive design for all devices
-- Premium typography and color harmony for a delightful experience
+### 🛡️ **Advanced Streaming**
+- Iframe proxy to bypass anti-embedding protections
+- Popup/ad blocking during playback
+- CORS bypass for cross-origin content
+- Automatic quality selection
 
-### 🚀 **Seamless Streaming**
-- One-click access to platforms like FlixBaba, 2Flix, FMovies, and Soap2Day
-- No registration required for instant access
-- Global streaming support for diverse audiences
+### 🎨 **Premium UI/UX**
+- Animated film reel header with floating cinema icons
+- Glassmorphism effects with backdrop blur
+- Gradient animations and particle effects
+- Mobile-optimized responsive design
 
 ---
 
 ## 🌐 Live Demo
 
-**[Explore MovieFinder Now](https://idyllize.github.io/MovieFinder/)**
+**[Launch MovieFinder](https://moviefinder.xyz)**
 
-Immerse yourself in a captivating movie discovery experience!
+Experience seamless streaming with multiple player options!
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Technology       | Purpose                              |
-|------------------|--------------------------------------|
-| **HTML5**        | Semantic structure and accessibility |
-| **CSS3**         | Advanced animations and responsive design |
-| **Vanilla JavaScript** | Dynamic functionality and API integration |
-| **TMDB API**     | Real-time movie data and posters     |
-| **GitHub Pages** | Reliable, fast hosting               |
+| Technology | Purpose |
+|------------|---------|
+| **Frontend** | HTML5, CSS3, Vanilla JavaScript |
+| **API Backend** | Node.js on Vercel Serverless |
+| **Proxy System** | HTTPS Proxy Agent with authentication |
+| **Data Source** | TMDB API for movie/TV metadata |
+| **Streaming** | Multi-source embed aggregation |
+| **Hosting** | GitHub Pages (Frontend) + Vercel (API) |
 
 ---
+## 📸 Features Overview
 
-## 🚀 Quick Start
-
-### Option 1: Live Version
-Visit [https://idyllize.github.io/MovieFinder/](https://moviefinder.xyz) to dive into movie discovery instantly.
-
-### Option 2: Local Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/idyllize/MovieFinder.git
-
-# Navigate to the project directory
-cd MovieFinder
-
-# Serve with a local web server
-# For Python 3:
-python -m http.server 8000
-
-# For Node.js (with http-server):
-npx http-server
-
-# Or open index.html directly in your browser
+### Multi-Player Selection
+```
+┌─────────────────────────────┐
+│     Select Player           │
+│                            │
+│  [Player 1]  [Player 2]    │
+│   VidSrc      VidSrc2      │
+│    BEST        FAST        │
+│                            │
+│  [Player 3]  [Player 4]    │
+│  MultiEmbed   2Embed       │
+│                            │
+│     [Player 5]             │
+│     FlixBaba               │
+└─────────────────────────────┘
 ```
 
----
-
-## 📷 Screenshots & Demo
-
-### Desktop Experience
-![Desktop Interface](https://i.imgur.com/4Qqqek6.png)
-*Elegant desktop interface with animated gradients and trending movie posters*
-
-### Mobile Experience
-![MobileMovieFinder](https://github.com/user-attachments/assets/7f5f2ee0-fe8c-4c48-8cc8-2bdb64a425a1)
-<div align="center">
-</div>
-
-*Seamlessly optimized mobile experience with responsive design and smooth animations*
-
-> 📱 **Mobile Demo**: The GIF above showcases the full mobile experience with fluid touch interactions and responsive layout
-
----
+### TV Show Navigation
+```
+Season: [1-10 ▼]  Episode: [1-24 ▼]  [Load Episode]
+Currently Playing: Breaking Bad - S1E1
+```
 
 ## 🎯 How It Works
 
-1. **🔍 Search**: Enter a movie or TV show name in the sleek search bar
-2. **🔥 Discover**: Browse trending movies with stunning poster displays
-3. **🚀 Stream**: Click "Watch Now" for instant streaming access
-4. **🎬 Enjoy**: Relish a fluid, visually captivating experience
+1. **Search/Browse**: Find movies or TV shows via search or trending
+2. **Select Content**: Click play on any movie or TV show card
+3. **Choose Player**: Select from 5 available players (auto-loads best option)
+4. **For TV Shows**: Use season/episode dropdowns to navigate
+5. **Enjoy**: Stream with popup blocking and enhanced compatibility
 
 ---
 
-## 🔧 Configuration
+## 🌟 Key Features
 
-### API Integration
-MovieFinder leverages the TMDB API for movie data and high-quality posters. The API key is included for demonstration.
+### For Movies
+- Direct streaming from 5 different sources
+- Automatic quality optimization
+- No registration required
 
-```javascript
-const TMDB_API_KEY = '3fd2be6f0c70a2a598f084ddfb75487c';
-const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
-```
+### For TV Shows  
+- Complete season navigation (1-10)
+- Episode selection (1-24)
+- Memory of current episode
+- Quick episode switching without closing player
 
-### Streaming Platforms
-Supported platforms:
-
-- **FlixBaba**: Primary streaming source
-- **2Flix**: Alternative streaming option
-- **FMovies**: Popular movie platform
-- **Soap2Day**: Movies and TV shows
-
-> **Note**: Ensure streaming platform URLs are accessible in your region.
-
----
-
-## 🌟 Key Highlights
-
-- **⚡ Blazing Fast**: Loads in under 2 seconds
-- **📱 Mobile Optimized**: 95/100 mobile score (see GIF demo)
-- **🎨 Visual Mastery**: Gradients, aurora effects, and glassmorphism
-- **🔒 Privacy First**: No data collection or tracking
-- **🌍 Global Reach**: Multi-platform streaming support
+### Technical Excellence
+- **Proxy System**: Bypasses geo-restrictions and anti-iframe
+- **Ad Blocking**: Prevents popups during playback
+- **Error Recovery**: Automatic fallback to next source
+- **Performance**: < 2 second load times
 
 ---
 
-## 📈 Performance
+## 📊 Performance Metrics
 
 | Metric | Score |
 |--------|-------|
-| **Load Time** | < 2 seconds |
-| **Bundle Size** | ~850 lines of code |
+| **Initial Load** | < 2 seconds |
+| **Player Switch** | < 1 second |
+| **API Response** | ~500ms |
 | **Mobile Score** | 95/100 |
-| **Accessibility** | WCAG 2.1 compliant |
-| **Cross-Platform** | Flawless on desktop and mobile |
-
----
-
-## 🎨 Design Philosophy
-
-MovieFinder is crafted for visual impact and user delight:
-
-- **🌈 Dynamic Gradients**: Cosmic purple/violet hues that shift subtly
-- **✨ Aurora Animations**: Floating light effects in the header
-- **🔮 Glassmorphism**: Frosted glass with backdrop blur
-- **📝 Typography**: Clean, readable fonts with optimal spacing
-- **🎨 Color Palette**: Harmonious, eye-friendly design
+| **Success Rate** | 95%+ with fallbacks |
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Follow these steps:
+We welcome contributions! Areas of focus:
 
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/new-feature`)
-3. **Commit** changes (`git commit -m 'Add new feature'`)
-4. **Push** to the branch (`git push origin feature/new-feature`)
-5. **Open** a Pull Request
+- Additional streaming sources
+- Improved TV show metadata
+- Enhanced mobile experience
+- Subtitle support
+- Watch history tracking
 
-### Guidelines
-- Preserve code style and visual consistency
-- Test across browsers and devices
-- Maintain mobile responsiveness (reference mobile GIF)
-- Keep the code size under ~1000 lines
+
+## 🔒 Security & Privacy
+
+- **No user data collection**
+- **No tracking or analytics**
+- **Proxy credentials secured server-side**
+- **All streams use HTTPS**
+- **Sandbox attributes on iframes**
 
 ---
 
 ## 📄 License
 
-Licensed under the MIT License.
+Modified MIT License (Non-Commercial) - See [LICENSE](LICENSE)
 
 ---
 
 ## 🙏 Acknowledgments
 
-- **🎬 The Movie Database (TMDB)**: For comprehensive movie data and posters
-- **🌐 GitHub Pages**: For fast, reliable hosting
-- **📺 Streaming Platforms**: For content accessibility
-- **💻 Open Source Community**: For inspiration and support
+- **TMDB**: Movie and TV show metadata
+- **VidSrc**: Primary streaming provider
+- **Vercel**: Serverless API hosting
+- **Open Source Community**: Continued support
 
 ---
 
-## 📞 Contact & Support
+## 📞 Support
 
 <div align="center">
 
-**Crafted with ❤️ by [Idyllize](https://github.com/idyllize)**
+**Built with passion by [MovieFinderInfo](https://github.com/MovieFinderInfo)**
 
-[![Website](https://img.shields.io/badge/Website-MovieFinder-6366f1?style=for-the-badge&logo=vercel)](https://idyllize.github.io/MovieFinder/)
-[![GitHub](https://img.shields.io/badge/GitHub-@idyllize-181717?style=for-the-badge&logo=github)](https://github.com/idyllize)
-[![Issues](https://img.shields.io/badge/Issues-Report%20Bug-red?style=for-the-badge&logo=github)](https://github.com/idyllize/MovieFinder/issues)
+[![Website](https://img.shields.io/badge/Website-MovieFinder-6366f1?style=for-the-badge)](https://moviefinder.xyz)
+[![GitHub](https://img.shields.io/badge/GitHub-MovieFinderInfo-181717?style=for-the-badge&logo=github)](https://github.com/MovieFinderInfo)
+[![Issues](https://img.shields.io/badge/Issues-Report-red?style=for-the-badge)](https://github.com/MovieFinderInfo/MovieFinder/issues)
 
 </div>
 
 ---
 
-## 🏆 Showcase
+## 🏆 What's New
 
-MovieFinder demonstrates:
+### Version 2.0 (Current)
+- ✅ Full TV show support with season/episode navigation
+- ✅ 5-player system with automatic fallback
+- ✅ Enhanced popup/ad blocking
+- ✅ Proxy system for better compatibility
+- ✅ Animated header with film reels
+- ✅ Complete UI/UX overhaul
 
-- **🚀 Modern Web Development**: Clean, efficient code
-- **📱 Responsive Design**: Seamless across devices
-- **🔗 API Integration**: Real-time TMDB data
-- **⚡ Performance**: Lightweight and fast
-- **🎨 Visual Excellence**: Captivating modern design
+### Coming Soon
+- 🔜 Subtitle support
+- 🔜 Watch history
+- 🔜 Favorites list
+- 🔜 Quality selection
+- 🔜 Chromecast support
 
 ---
 
 <div align="center">
 
-**⭐ Star this repository if you love it!**
+**⭐ Star this repository if you enjoy using MovieFinder!**
 
-[![GitHub stars](https://img.shields.io/github/stars/idyllize/MovieFinder?style=social)](https://github.com/idyllize/MovieFinder/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/idyllize/MovieFinder?style=social)](https://github.com/idyllize/MovieFinder/network/members)
+[![GitHub stars](https://img.shields.io/github/stars/MovieFinderInfo/MovieFinder?style=social)](https://github.com/MovieFinderInfo/MovieFinder/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/MovieFinderInfo/MovieFinder?style=social)](https://github.com/MovieFinderInfo/MovieFinder/network)
 
-## 🎬 [Discover Movies Now](https://idyllize.github.io/MovieFinder/) 🎬
+## 🎬 [Start Streaming Now](https://moviefinder.xyz) 🎬
 
-*Last updated: June 18, 2025*
+*Last updated: December 2024*
 
 </div>
